@@ -1,0 +1,20 @@
+.background {
+    -fx-background-color: #1f1b24;
+    -fx-border-radius: 1em;
+}
+
+.root-pane{
+    -fx-background-color: #121212;
+}
+
+.inputs{
+    -fx-text-fill: #FFFFFF;
+}
+
+.botao-login{
+    -fx-background-color:  #3fa5ff;
+}
+
+.error-label{
+    -fx-text-fill: #ff0000
+}
