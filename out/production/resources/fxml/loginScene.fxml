@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="405.0" prefWidth="345.0" styleClass="root-pane" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="me.project.mosaic.login.LoginController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="28.0" prefHeight="349.0" prefWidth="306.0" styleClass="background" stylesheets="@css/login.css">
+         <children>
+            <JFXTextField fx:id="emailField" focusColor="#add7ff" layoutX="31.0" layoutY="110.0" prefHeight="26.0" prefWidth="245.0" promptText="Email" styleClass="inputs" stylesheets="@css/login.css" unFocusColor="#c3b7b7" />
+            <JFXPasswordField fx:id="passwordField" focusColor="#add7ff" layoutX="31.0" layoutY="185.0" prefHeight="26.0" prefWidth="245.0" promptText="Senha" styleClass="inputs" stylesheets="@css/login.css" unFocusColor="#c3b7b7" />
+            <JFXButton fx:id="confirmButton" layoutX="31.0" layoutY="262.0" prefHeight="26.0" prefWidth="245.0" styleClass="botao-login" stylesheets="@css/login.css" text="Entrar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></JFXButton>
+            <Label layoutX="88.0" layoutY="42.0" text="Mosaic Viewer" textFill="#d0cccc">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" layoutX="63.0" layoutY="63.0" prefHeight="34.0" prefWidth="181.0" styleClass="error-label" stylesheets="@css/login.css" textAlignment="CENTER" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="fecharImage" fitHeight="26.0" fitWidth="21.0" layoutX="321.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/fechar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="minimizarImage" fitHeight="26.0" fitWidth="21.0" layoutX="300.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/minimizar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
